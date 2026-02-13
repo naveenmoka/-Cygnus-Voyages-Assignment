@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react'
 import { jobs as jobsData } from './data/jobs'
 import JobCard from './components/JobCard'
 import Filters from './components/Filters'
+import filterJobs from './utils/filterJobs'
 
 function highlightParts(text, query) {
   if (!query) return text
@@ -18,17 +19,7 @@ export default function App() {
   const [sortAlpha, setSortAlpha] = useState(false)
 
   const displayedJobs = useMemo(() => {
-    let list = jobsData.filter(job =>
-      job.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      (locationFilter === 'All' || job.location === locationFilter) &&
-      (typeFilter === 'All' || job.type === typeFilter)
-    )
-
-    if (sortAlpha) {
-      list = [...list].sort((a, b) => a.title.localeCompare(b.title))
-    }
-
-    return list
+    return filterJobs(jobsData, searchTerm, locationFilter, typeFilter, sortAlpha)
   }, [searchTerm, locationFilter, typeFilter, sortAlpha])
 
   return (
