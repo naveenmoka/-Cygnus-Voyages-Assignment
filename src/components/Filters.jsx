@@ -2,7 +2,7 @@ import React from 'react'
 
 const Filters = ({ searchTerm, setSearchTerm, locationFilter, setLocationFilter, typeFilter, setTypeFilter, sortAlpha, setSortAlpha }) => {
   return (
-    <div className="space-y-4 card-shadow p-4">
+    <div className="space-y-4 bg-white rounded-lg shadow-sm p-4">
       <label className="block text-sm font-medium text-gray-700">Search</label>
       <input
         aria-label="Search jobs"

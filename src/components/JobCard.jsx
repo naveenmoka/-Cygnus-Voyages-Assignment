@@ -8,7 +8,7 @@ const typeColor = (type) => {
 
 const JobCard = ({ job, highlightParts }) => {
   return (
-    <article className="p-4 card-shadow hover:shadow-lg transition-shadow duration-150 border border-transparent hover:border-gray-100">
+    <article className="p-4 bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-150 border border-transparent hover:border-gray-100">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h3 className="text-lg font-semibold mb-1 leading-tight text-gray-900">

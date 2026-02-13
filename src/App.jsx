@@ -23,7 +23,7 @@ export default function App() {
   }, [searchTerm, locationFilter, typeFilter, sortAlpha])
 
   return (
-    <div className="min-h-screen p-6 container-centered mx-auto">
+    <div className="min-h-screen p-6 max-w-6xl mx-auto">
       <header className="mb-6">
         <h1 className="text-3xl font-bold">Job Board</h1>
         <p className="text-sm text-gray-600">Search and filter open roles</p>
