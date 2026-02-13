@@ -1,0 +1,58 @@
+export const jobs = [
+  {
+    id: 1,
+    title: "Frontend Intern",
+    company: "Acme Corp",
+    location: "Remote",
+    type: "Internship",
+  },
+  {
+    id: 2,
+    title: "Web Developer",
+    company: "Tech Solutions",
+    location: "On-site",
+    type: "Full-time",
+  },
+  {
+    id: 3,
+    title: "Backend Engineer",
+    company: "DataWorks",
+    location: "On-site",
+    type: "Full-time",
+  },
+  {
+    id: 4,
+    title: "UI/UX Designer",
+    company: "BrightStudio",
+    location: "Remote",
+    type: "Full-time",
+  },
+  {
+    id: 5,
+    title: "Mobile Intern",
+    company: "AppFlow",
+    location: "Remote",
+    type: "Internship",
+  },
+  {
+    id: 6,
+    title: "DevOps Engineer",
+    company: "InfraCorp",
+    location: "On-site",
+    type: "Full-time",
+  },
+  {
+    id: 7,
+    title: "Product Manager",
+    company: "Visionary",
+    location: "On-site",
+    type: "Full-time",
+  },
+  {
+    id: 8,
+    title: "QA Tester",
+    company: "QualityFirst",
+    location: "Remote",
+    type: "Full-time",
+  },
+];
