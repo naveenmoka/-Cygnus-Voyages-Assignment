@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --app-max-w: 1100px;
+}
+
 html,body,#root{
   height:100%;
 }
 
 body{
-  @apply bg-gray-50 text-gray-900;
+  @apply bg-gray-50 text-gray-900 antialiased;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
+
+.container-centered{
+  max-width: var(--app-max-w);
+}
+
+.card-shadow{
+  @apply bg-white rounded-lg shadow-sm;
+}
+

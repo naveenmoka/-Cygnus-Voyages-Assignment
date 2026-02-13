@@ -23,9 +23,9 @@ export default function App() {
   }, [searchTerm, locationFilter, typeFilter, sortAlpha])
 
   return (
-    <div className="min-h-screen p-6 max-w-6xl mx-auto">
+    <div className="min-h-screen p-6 container-centered mx-auto">
       <header className="mb-6">
-        <h1 className="text-2xl font-bold">Job Board</h1>
+        <h1 className="text-3xl font-bold">Job Board</h1>
         <p className="text-sm text-gray-600">Search and filter open roles</p>
       </header>
 
@@ -44,6 +44,11 @@ export default function App() {
         </aside>
 
         <main className="md:col-span-3">
+          <div className="flex items-center justify-between mb-4">
+            <div className="text-sm text-gray-600">Showing <span className="font-medium text-gray-800">{displayedJobs.length}</span> job(s)</div>
+            <div className="text-sm text-gray-500">Tip: use the search box to highlight matches</div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {displayedJobs.length === 0 ? (
               <div className="col-span-full text-center text-gray-500">No jobs found</div>
